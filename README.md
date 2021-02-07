@@ -1,2 +1,2 @@
-# ffmpeg-scripts
-Scrips i made to use FFMPEG
+# FFmpeg-scripts
+Scrips I made to help me automate FFmpeg
