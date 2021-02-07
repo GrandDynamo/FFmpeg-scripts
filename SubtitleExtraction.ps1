@@ -10,5 +10,5 @@ $files = Get-ChildItem -Path "$inputDir" | Where-Object { $_.PSIsContainer -eq $
 foreach ($file in $files) {
     $subtitleFileName = $file.BaseName + '.ssa'
     Write-Host $file
-    ffmpeg.exe -i "$inputDir\$file" -map 0:s:1 "$outputDir\$subtitleFileName"
+    ffmpeg.exe -i "$inputDir\$file" -map 0:s:0 "$outputDir\$subtitleFileName"
 }
